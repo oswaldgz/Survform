@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="osiform.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container ">
+        <header class="header">
+            <h1 id="title">
+                Oswald's Neon Survey Form
+            </h1>
+            <p id="description">
+                Thank you for answering my survey, Enjoy!
+            </p>
+        </header>
+        <form action="" id="survey-form">
+
+            <div class="form-group">
+                <label for="name">Can you tell me your name?</label>
+                <input type="text" name="name" id="name" class="formControl" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <p id="quest">How old are you?</p>
+                <select name="role" required id="dropdown" class="formControl">
+                    <option value disabled selected >Click here</option>
+                    <option value="">15-20</option>
+                    <option value="">21-25</option>
+                    <option value="">26-30</option>
+                    <option value="">31-35</option>
+                    <option value="">36-40</option>
+                </select>
+            </div>
+                
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="formControl" placeholder="Enter your Email here" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Contact Number</label>
+                <input type="number" name="phone" id="phone" class="formControl" placeholder="Enter your Contact Number here" required>
+            </div>
+
+            <div class="form-group">
+                <label for="celeb">Who is your Favorite Celebrity?<span class="clue"></span></label>
+                <input type="text" name="celeb" id="celeb" class="formControl" placeholder="Enter here">
+            </div>
+
+            <div class="form-group">
+                <label for="weird">What's the weirdest food combination you enjoy?</label>
+                <input type="weird" name="weird" id="weird" class="formControl" placeholder="Enter here" required>
+            </div>
+
+            <div class="form-group">
+                <p id="quest">If you are given one superpower what would it be</p>
+                <select name="role" required id="dropdown" class="formControl">
+                    <option value disabled selected >Click here</option>
+                    <option value="">Super Strength</option>
+                    <option value="">Invisibility</option>
+                    <option value="">Hyper Speed</option>
+                    <option value="">Teleportation</option>
+                    <option value="">Telekenesis/option>
+                </select>
+            </div>
+                
+            <div class="form-group">
+                <p id="quest">What animal person are you?</p>
+                <label for="">
+                    <input type="radio" name="source" value=""
+                    class="inputRadio"
+                    checked> Dog
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value=""
+                    class="inputRadio"
+                    > Cat
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value=""
+                    class="inputRadio"
+                    > Bird
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="-"
+                    class="inputRadio"
+                    > Exotic
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value=""
+                    class="inputRadio"
+                    > Others
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p id="quest">What's your favorite genre in movies?</p>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="act"> Action
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="adv"> Adventure
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="hor">  Horror
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="thrill"> Thriller
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="myst"> Mystery
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="rom"> Romance
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="fant"> Fantasy
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="sci"> Sci-Fi
+                </label>
+
+            </div>
+
+            <div class="form-group">
+                <p id="quest">Are you contented in your life?</p>
+                <select name="role" required id="dropdown" class="formControl">
+                    <option value disabled selected >Click here</option>
+                    <option value="">Yes</option>
+                    <option value="">No</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p id="quest">Rate my Survey?</p>
+                <select name="role" required id="dropdown" class="formControl">
+                    <option value disabled selected >Click here</option>
+                    <option value="">1 Star</option>
+                    <option value="">2 Stars</option>
+                    <option value="">3 Stars</option>
+                    <option value="">4 Stars</option>
+                    <option value="">5 Stars</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p id="quest">How's my survey experience?</p>
+                <textarea name="feedback"  cols="30" rows="5"  id="feedback" class="textarea" placeholder="Enter your feedback here"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
